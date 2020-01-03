@@ -1,0 +1,92 @@
+.systems
+	
+	&__title
+		text-align center
+		font-size 43px
+		margin 0 0 40px 0
+	
+	&__descr
+		max-width 950px
+		text-align center
+		margin 0 auto 40px auto
+	
+	&__list
+		display flex
+		flex-wrap wrap
+		justify-content center
+		margin 0 0 40px 0
+		
+		li
+			padding 15px
+	
+	&__systems
+		display flex
+		flex-wrap wrap
+		justify-content center
+		margin 0 0 40px 0
+		
+		li
+			margin 15px
+			padding 15px 25px
+			border 1px solid textColor
+			border-radius 5px
+			text-transform uppercase
+			font-weight 600
+	
+	&__features
+		margin 0 0 40px 0
+		
+		ul
+			
+			li
+				margin 0 0 15px 0
+				padding 0 0 0 30px
+				position relative
+				
+				&:before
+					content ''
+					display block
+					position absolute
+					left 0
+					top 50%
+					margin -12px 0 0 0
+					width 24px
+					height 24px
+					background-image url(../img/check.png)
+					background-size cover
+	
+	&__benefit
+		
+		h3
+			margin 0 0 15px 0
+		
+		ul
+			counter-reset benefits-counter
+			display flex
+			flex-wrap wrap
+			
+			li
+				position relative
+				counter-increment benefits-counter
+				max-width 400px
+				padding 0 35px
+				margin 15px 0
+				
+				&:nth-child(n):before
+					content counter(benefits-counter)
+					display block
+					width 25px
+					height 25px
+					text-align center
+					line-height 25px
+					border-radius 50%
+					position absolute
+					top 0
+					left 0
+					background-color textColor
+					color white
+					font-weight 600
+	
+.bold
+	font-weight 600
+	font-size 1.1rem
